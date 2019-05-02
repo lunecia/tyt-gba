@@ -19,6 +19,26 @@ $('.re').on('click', function (e) {
 });
 
 
+$(function() {
+  $("#pic, #qr").on('change', function() {
+    setTimeout(function() {
+      $.fakeLoader({
+          bgColor: '#2ecc71',
+          spinner:"spinner1"
+      });
+      top.location.href='share.html';
+
+    })
+   
+  });
+
+  $("img.logo").on('click', function() {
+    top.location.href='home.html';
+  })
+})
+
+
+
 (function myTimer() {
   setTimeout(function() {
     var t = $('#c1');
@@ -62,11 +82,9 @@ getDate();
 timer();
 
 
-$(function() {
-  $("#pic").on('change', function() {
-    top.location.href='share.html';
-  })
-})
+
+
+
 
 
 
