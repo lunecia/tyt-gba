@@ -209,6 +209,92 @@ nav input:focus {
 	font-size: 20px;
 }
 
+.share {height: 100vh;}
+.share h1 {
+	width: 25%;
+	text-align: left;
+}
+.share h3 {
+	color: #2d6b3b;
+	text-transform: uppercase;
+}
+.share .take-pic {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+	margin: 0 auto;
+}
+.share .take-pic img {
+
+}
+.share .share-wrap {
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 20px;
+}
+.share .share-wrap a {
+	color: #fff;
+	text-align: left;
+	width: 120px;
+	margin: 5px auto;
+	padding: 0 50px;
+	display: block;
+	position: relative;
+}
+.share .share-wrap a .coin {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 48%;
+	color: lighten(#F9D600, 30%);
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 32px;
+	text-shadow: 1px 1px 2px lighten(#F9D600, 10%);
+	width: 30px;
+	height: 30px;
+	background-color: #F9D600;
+	border: 5px solid lighten(#F9D600, 5%);
+	border-radius: 50%;
+}
+.jump {
+  animation: jumpUp 1s ease 200ms forwards;
+  animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+}
+
+@keyframes jumpUp {
+  0% { 
+    top: 0;
+    opacity: 0.5;
+    transform: rotateY(0);
+  }
+  100% { 
+    top: -60px;
+    opacity: 1;
+    transform: rotateY(360deg); 
+  }
+}
+.share .share-wrap .fb {background: #3A559F;}
+.share .share-wrap .ig {background: #F993CA;}
+.share .share-wrap .tw {background: #50ABF1;}
+.share .share-wrap .bk {background: #2d6b3b;}
+.share .share-wrap svg,
+.share .share-wrap p {
+	display: inline-block;
+}
+.share .share-wrap svg {
+	width: 32px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.share .share-wrap p {
+	font-size: 12px;
+}
+
+
 
 
 

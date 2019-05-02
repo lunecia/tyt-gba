@@ -2,6 +2,22 @@ $('.hamberger').on('click', function(){
   $('nav').toggleClass('active');
 });
 
+$('.add-point').on('click',function(){
+  $(this).find('span').addClass('jump');
+  setTimeout(()=>{
+    $('#coin').removeClass('jump');
+  }, 1500);
+});
+
+$('.re').on('click', function (e) {
+   e.preventDefault(); 
+
+   setTimeout(function () {
+       window.location.href = "home.html"; 
+    }, 1500); 
+
+});
+
 
 (function myTimer() {
   setTimeout(function() {
@@ -44,6 +60,9 @@ function timer() {
 
 getDate();
 timer();
+
+
+
 
 
 
