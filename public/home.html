@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Totota-Bank-Demo</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <noscript>
+    your browser can not support javascript
+  </noscript>
+  
+  <div class="container home">
+    <div class="header">
+      <h1>
+        <img class="logo" src="images/logo.png" alt="">
+      </h1>
+      <div class="hamberger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <a href="home.html">home</a>
+        <a href="profile.html">profile</a>
+        <a href="#">ranking</a>
+        <a href="#">redeem</a>
+        <a href="#">q&a</a>
+        <input type="search">
+      </nav>
+    </div>
+    <div class="result">
+      <div class="box meter">
+        <a href="">
+          <img src="images/meter.png" alt="">
+        </a>
+      </div>
+      <div class="box map">
+        <a href="">
+          <img src="images/map.png" alt="">
+        </a>
+      </div>
+      <div class="box result-value">
+        <div class="count-wrap all">
+          <p>all user</p>
+          <div class="count" id="c1">574328</div>
+        </div>
+        <div class="count-wrap pcs">
+          <div class="count" id="c2">838626</div>
+          <p>pcs</p>
+        </div>
+        <p>of waste reduced</p>
+        <img src="images/type.png" alt="">
+      </div>
+    </div>
+    <div class="time-wrap">
+      <p>time</p>
+      <p class="time" id="time"></p>
+      <p>calendar</p>
+      <p class="date" id="date"></p>
+    </div>
+  </div>
+  <div class="action">
+    <input id="qr" type="file" accept="image/*" capture="camera" />
+    <label for="qr" class="box qr">
+      <p>scan qr code</p>
+    </label>
+    <input id="pic" type="file" accept="image/*" capture="camera" />
+    <label for="pic" class="box pic">
+      <p>take picture</p>
+    </label>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(){
+        console.log('Service Worker Registered');
+      });
+    }
+  </script>
+</body>
+</html>

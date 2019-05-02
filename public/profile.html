@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <title>Totota-Bank-Demo</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <noscript>
+    your browser can not support javascript
+  </noscript>
+  
+  <div class="container profile">
+    <div class="header">
+      <h1>
+        <img class="logo" src="images/logo.png" alt="">
+      </h1>
+      <div class="hamberger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <a href="home.html">home</a>
+        <a href="profile.html">profile</a>
+        <a href="#">ranking</a>
+        <a href="#">redeem</a>
+        <a href="#">q&a</a>
+        <input type="search">
+      </nav>
+    </div>
+    <div class="profile-pic">
+      <img src="images/profile.png" alt="">
+    </div>
+    <div class="greeting">
+      <p>Hi! </p>
+      <p>Ed Sheeran</p>
+    </div>
+    <div class="point">
+      <p>Your Greenpoint collected is <span>300</span> point</p>
+    </div>
+    <div class="gallery-wrap">
+       <p>Gallery</p>
+       <div class="gallery">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+        <img src="https://picsum.photos/108" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="action">
+    <input id="qr" type="file" accept="image/*" capture="camera" />
+    <label for="qr" class="box qr">
+      <p>scan qr code</p>
+    </label>
+    <input id="pic" type="file" accept="image/*" capture="camera" />
+    <label for="pic" class="box pic">
+      <p>take picture</p>
+    </label>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="scripts/script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').then(function(){
+        console.log('Service Worker Registered');
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+	"background_color" : "#ffffff",
+	"description" : "Toyota Bank demo",
+	"display" : "fullscreen",
+	"icons": [
+	    {
+			"src": "/images/icon/icon192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+	    },
+	    {
+			"src": "/images/icon/icon512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+	    }
+  	],
+	"name" : "Toyota Bank Account",
+	"short_name" : "Toyota Bank",
+	"theme_color" : "#ffffff",
+	"start_url" : "/index.html"
+}
