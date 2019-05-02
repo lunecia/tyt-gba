@@ -62,9 +62,11 @@ getDate();
 timer();
 
 
-
-
-
+$(function() {
+  $("#pic").on('change', function() {
+    top.location.href='share.html';
+  })
+})
 
 
 
