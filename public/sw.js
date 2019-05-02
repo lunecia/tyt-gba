@@ -7,10 +7,7 @@ self.addEventListener('install', function(e) {
         '/styles/main.css',
         '/styles/normalize.css',
         '/scripts/script.js',
-        '/images/1.jpg',
-        '/images/2.jpg',
-        '/images/3.jpg',
-        '/images/4.jpg'
+        '/images/profile.png',
       ]);
     })
   );
